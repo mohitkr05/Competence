@@ -1,0 +1,201 @@
+2012-07-10 20:38:41 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-11 08:16:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersCertification.user_id' in 'on clause'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Certifi...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Certifi...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1254): DboSource->fetchAll('SELECT `Certifi...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1117): DboSource->queryAssociation(Object(User), Object(Certification), 'hasAndBelongsTo...', 'Certification', Array, Array, true, Array, 0, Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(User), Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1516): Model->find('first', Array)
+#7 C:\Users\emokuma\www\cake\competence\Controller\UsersController.php(32): Model->read(NULL, '1')
+#8 [internal function]: UsersController->view('1')
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:24:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersSkill.user_id' in 'field list'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `UsersSk...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `UsersSk...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `UsersSk...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1847): Model->find('all', Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1743): Model->_saveMulti(Array, '1', Object(Mysql))
+#7 C:\Users\emokuma\www\cake\competence\Controller\SkillsController.php(43): Model->save(Array)
+#8 [internal function]: SkillsController->add()
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(SkillsController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SkillsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:25:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersEducation.user_id' in 'field list'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `UsersEd...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `UsersEd...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `UsersEd...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1847): Model->find('all', Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1743): Model->_saveMulti(Array, '1', Object(Mysql))
+#7 C:\Users\emokuma\www\cake\competence\Controller\EducationsController.php(43): Model->save(Array)
+#8 [internal function]: EducationsController->add()
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(EducationsController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:25:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersCertification.user_id' in 'on clause'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Certifi...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Certifi...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1254): DboSource->fetchAll('SELECT `Certifi...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1117): DboSource->queryAssociation(Object(User), Object(Certification), 'hasAndBelongsTo...', 'Certification', Array, Array, true, Array, 0, Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(User), Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1516): Model->find('first', Array)
+#7 C:\Users\emokuma\www\cake\competence\Controller\UsersController.php(32): Model->read(NULL, '1')
+#8 [internal function]: UsersController->view('1')
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:40:46 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Users\emokuma\www\cake\competence\View\Users\add.ctp, line 10]
+2012-07-11 08:40:46 Error: [FatalErrorException] syntax error, unexpected ','
+#0 C:\Users\emokuma\www\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\emokum...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\emokum...', 10, Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\emokum...', 10, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-11 08:40:59 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\emokuma\www\cake\competence\View\Users\add.ctp, line 16]
+2012-07-11 08:40:59 Error: [FatalErrorException] syntax error, unexpected ')'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\emokum...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\emokum...', 16, Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\emokum...', 16, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-11 08:41:10 Error: Fatal Error (1): Call to a member function value() on a non-object in [C:\Users\emokuma\www\cake\competence\View\Users\add.ctp, line 15]
+2012-07-11 08:41:11 Error: [FatalErrorException] Call to a member function value() on a non-object
+#0 C:\Users\emokuma\www\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\emokum...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-11 08:41:28 Error: Fatal Error (1): Call to a member function value() on a non-object in [C:\Users\emokuma\www\cake\competence\View\Users\add.ctp, line 15]
+2012-07-11 08:41:28 Error: [FatalErrorException] Call to a member function value() on a non-object
+#0 C:\Users\emokuma\www\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\emokum...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-11 08:41:49 Error: Fatal Error (1): Call to a member function value() on a non-object in [C:\Users\emokuma\www\cake\competence\View\Users\add.ctp, line 15]
+2012-07-11 08:41:49 Error: [FatalErrorException] Call to a member function value() on a non-object
+#0 C:\Users\emokuma\www\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\emokum...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-11 08:42:08 Error: Fatal Error (1): Call to a member function value() on a non-object in [C:\Users\emokuma\www\cake\competence\View\Users\add.ctp, line 15]
+2012-07-11 08:42:08 Error: [FatalErrorException] Call to a member function value() on a non-object
+#0 C:\Users\emokuma\www\cake\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\emokum...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\emokum...', 15, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-11 08:47:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersCertification.user_id' in 'on clause'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Certifi...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Certifi...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1254): DboSource->fetchAll('SELECT `Certifi...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1117): DboSource->queryAssociation(Object(User), Object(Certification), 'hasAndBelongsTo...', 'Certification', Array, Array, true, Array, 0, Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(User), Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1516): Model->find('first', Array)
+#7 C:\Users\emokuma\www\cake\competence\Controller\UsersController.php(78): Model->read(NULL, '1')
+#8 [internal function]: UsersController->edit('1')
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:48:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersCertification.user_id' in 'where clause'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `UsersCe...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `UsersCe...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `UsersCe...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2460): Model->find('all', Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2362): Model->_deleteLinks('1')
+#7 C:\Users\emokuma\www\cake\competence\Controller\UsersController.php(104): Model->delete()
+#8 [internal function]: UsersController->delete('1')
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:48:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersVendor.user_id' in 'field list'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `UsersVe...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `UsersVe...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `UsersVe...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1847): Model->find('all', Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1743): Model->_saveMulti(Array, '1', Object(Mysql))
+#7 C:\Users\emokuma\www\cake\competence\Controller\VendorsController.php(43): Model->save(Array)
+#8 [internal function]: VendorsController->add()
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(VendorsController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(VendorsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:59:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersVendor.user_id' in 'field list'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `UsersVe...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `UsersVe...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `UsersVe...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1847): Model->find('all', Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1743): Model->_saveMulti(Array, '2', Object(Mysql))
+#7 C:\Users\emokuma\www\cake\competence\Controller\VendorsController.php(43): Model->save(Array)
+#8 [internal function]: VendorsController->add()
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(VendorsController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(VendorsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:59:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersVendor.vendor_id' in 'on clause'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1254): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1117): DboSource->queryAssociation(Object(Vendor), Object(User), 'hasAndBelongsTo...', 'User', Array, Array, true, Array, 0, Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(Vendor), Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1516): Model->find('first', Array)
+#7 C:\Users\emokuma\www\cake\competence\Controller\VendorsController.php(74): Model->read(NULL, '2')
+#8 [internal function]: VendorsController->edit('2')
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(VendorsController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(VendorsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-11 08:59:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'UsersCertification.user_id' in 'on clause'
+#0 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Certifi...', Array)
+#2 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Certifi...', Array, Array)
+#3 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1254): DboSource->fetchAll('SELECT `Certifi...', false)
+#4 C:\Users\emokuma\www\cake\lib\Cake\Model\Datasource\DboSource.php(1117): DboSource->queryAssociation(Object(User), Object(Certification), 'hasAndBelongsTo...', 'Certification', Array, Array, true, Array, 0, Array)
+#5 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(2631): DboSource->read(Object(User), Array)
+#6 C:\Users\emokuma\www\cake\lib\Cake\Model\Model.php(1516): Model->find('first', Array)
+#7 C:\Users\emokuma\www\cake\competence\Controller\UsersController.php(32): Model->read(NULL, '1')
+#8 [internal function]: UsersController->view('1')
+#9 C:\Users\emokuma\www\cake\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Users\emokuma\www\cake\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Users\emokuma\www\cake\competence\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
