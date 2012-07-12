@@ -12,9 +12,12 @@ To Do :: Features
 - Form filling as a wizard
 - Quick search
 - Excel export
+<<<<<<< HEAD
 
 V0.1
  - Initial Commit
  
 V0.2
  - Fixed bugs with routing
+=======
+>>>>>>> 472ec2611136b7bc462e82ed4ff53607fcb679af
