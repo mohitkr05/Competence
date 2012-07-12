@@ -38,8 +38,8 @@ public $components = array('Session','Auth'=> array(
 //Error to display when user attempts to access an object or action to which they do not have access.
 'authError' => 'You need to login to access the page',
 'authorize' => array('controller'),
-'loginRedirect'=> array('controller'=>'users','controller'=>'edit' ),
-'logoutRedirect'=> array('controller'=>'users','controller'=>'logout' )
+'loginRedirect'=> array('controller'=>'users','action'=>'index' ),
+'logoutRedirect'=> array('controller'=>'users','action'=>'index' )
 )
 );
 

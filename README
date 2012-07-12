@@ -1,0 +1,20 @@
+Competence Tracker
+
+This is a cake php project. I am working learning cake php 2.0 and its a practical implementation.
+
+Features
+- User Authentication
+- Dynamic Competencies
+
+
+To Do :: Features
+- Add a Graph and count using jquery
+- Form filling as a wizard
+- Quick search
+- Excel export
+
+V0.1
+ - Initial Commit
+ 
+V0.2
+ - Fixed bugs with routing

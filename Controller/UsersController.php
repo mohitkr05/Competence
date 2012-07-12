@@ -13,6 +13,21 @@ public function beforeFilter() {
         $this->Auth->allow('register', 'logout');
     }
 
+    
+    
+ public function isAuthorized($user)  {
+ 	
+ 	if (in_array($this->action, array('edit'))){
+ 		if($user['id']!= $this->request->params['pass'][0]){
+ 			
+ 			return false;
+ 		}
+ 		return true;
+ 		
+ 		
+ 	}
+ 	
+ } 
 /**
  * index method
  *
